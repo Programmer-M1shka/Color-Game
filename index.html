@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="header">Color Game</h1>
+        <h1 id="winningText"> - - - - -</h1>
+        <div class="winningCount">
+            <h3>ქულები:<span id="count">0</span></h3>
+        </div>
+         </header>
+
+    <main>
+        <button id="easy">მარტივი</button>
+        <button id="hard">რთული</button>
+        <button id="result">შედეგი</button>
+    </main>
+
+    <section>
+        <div class="Game-box"></div>
+        <div class="Game-box"></div>
+        <div class="Game-box"></div>
+        <div class="Game-box"></div>
+        <div class="Game-box"></div>
+        <div class="Game-box"></div>
+    </section>
+
+    <footer>
+        <button onclick="startGame()" id="start-game">დაწყება</button>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

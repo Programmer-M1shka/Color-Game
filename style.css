@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background:url(./back.png)
+}
+.header {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    cursor:pointer;
+    padding-top: 30px;
+   
+}
+#winningText {
+  font-size: 40px;
+  padding-top: 0;
+  width: fit-content;
+  margin: 15px auto;
+  color: white;
+  font-family: 'Creepster', system-ui;
+  cursor: pointer;
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+main button {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(91, 27, 94);
+    color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    width: 290px;
+    height: 40px;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 1px rgb(157, 53, 162);
+   
+}
+#start-game {
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+   
+
+}
+#start-game:hover{
+    animation: rotate 2s infinite linear;
+} 
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .winningCount {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: yellow; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    animation: fadeIn 1s ease-out;
+    position: relative;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .winningCount p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+section {
+    display: flex;
+    margin: 60px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 640px;
+   
+}
+section div {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: inset 0 0 15px 3px rgb(29, 29, 29); 
+    transition: 0.5s;
+    animation: rotatingCubes 3s infinite;
+}
+
+footer button {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 39px;
+    right: 40px;
+}
+
+.success {
+  background-color: green;
+  box-shadow:  0 0 20px 2 2px green;
+}
+
+
+.error {
+  background-color: red;
+  box-shadow:  0 0 20px 2 2px red;
+}
+
+div {
+  transition: .5s;
+}
+
+.swal2-title {
+  font-family: cursive;
+}
+
+.swal2{
+  height: 600px !important;
+}
